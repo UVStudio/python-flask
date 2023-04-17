@@ -1,3 +1,7 @@
+### deployment
+
+API is deployed on Render.com
+
 ### runs app in docker locally and refreshes on save
 
 ```
@@ -26,4 +30,11 @@ COPY ./requirements.txt requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY . .
 CMD ["flask", "run", "--host", "0.0.0.0"]
+```
+
+### .env
+
+```
+DATABASE_URL=
+JWT_SECRET_KEY=
 ```
